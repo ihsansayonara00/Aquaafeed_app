@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaFeed - Jalankan Aplikasi Java</title>
+    <script src="https://cjrtnc.cheerpj.com/v3.0/loader.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #f4f6f9; margin-top: 30px; }
+        #container { width: 1024px; height: 768px; margin: 0 auto; border: 2px solid #2980b9; background: #ffffff; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+<h2>🚀 AquaFeed Desktop App - Web Runtime Emulator</h2>
+<p>Mohon tunggu sebentar, aplikasi JavaFX sedang dimuat oleh browser...</p>
+
+<div id="container"></div>
+
+<script>
+    cheerpjInit();
+    cheerpjCreateDisplay(1024, 768, document.getElementById("container"));
+
+    // Membuka file .jar langsung dari server mentah GitHub Anda
+    cheerpjRunJar("https://raw.githubusercontent.com/ihsansayonara00/PemberianPakanIkan/main/APKPemberianPakanIkan-1.0-SNAPSHOT.jar");
+</script>
+</body>
+</html>
