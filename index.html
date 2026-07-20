@@ -3,25 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AquaFeed - Jalankan Aplikasi Java</title>
-    <script src="https://cjrtnc.cheerpj.com/v3.0/loader.js"></script>
+    <title>Unduh Aplikasi AquaFeed</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; background-color: #f4f6f9; margin-top: 30px; }
-        #container { width: 1024px; height: 768px; margin: 0 auto; border: 2px solid #2980b9; background: #ffffff; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        body { font-family: 'Segoe UI', Arial, sans-serif; text-align: center; background-color: #f4f7f6; padding: 50px 20px; color: #333; }
+        .box { max-width: 600px; margin: 0 auto; background: white; padding: 45px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-top: 5px solid #2980b9; }
+        h1 { color: #2c3e50; margin-bottom: 5px; }
+        .subtitle { color: #7f8c8d; font-size: 14px; margin-bottom: 25px; }
+        .btn { display: inline-block; background-color: #27ae60; color: white; padding: 14px 35px; text-decoration: none; font-weight: bold; border-radius: 25px; margin-top: 15px; box-shadow: 0 4px 10px rgba(39, 174, 96, 0.3); transition: 0.2s; }
+        .btn:hover { background-color: #219653; transform: translateY(-1px); }
+        .instruction-box { background-color: #fff9db; border-left: 4px solid #f59f00; padding: 15px; text-align: left; margin-top: 30px; border-radius: 4px; }
+        .instruction-box h4 { margin: 0 0 8px 0; color: #f59f00; }
+        .instruction-box ol { margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.6; }
+        .note { font-size: 11px; color: #b2bec3; margin-top: 25px; }
     </style>
 </head>
 <body>
-<h2>🚀 AquaFeed Desktop App - Web Runtime Emulator</h2>
-<p>Mohon tunggu sebentar, aplikasi JavaFX sedang dimuat oleh browser...</p>
 
-<div id="container"></div>
+<div class="box">
+    <h1>🐠 Aplikasi AquaFeed</h1>
+    <div class="subtitle">Sistem Rekomendasi Pakan Optimal (Java Desktop - Greedy Fractional Knapsack)</div>
+    
+    <p>Silakan klik tombol di bawah ini untuk mengunduh file aplikasi:</p>
+    
+    <!-- Mengarah ke folder target tempat file .jar berada -->
+    <a href="target/APKPemberianPakanIkan-1.0-SNAPSHOT.jar" class="btn" download>📥 Unduh Aplikasi (.JAR)</a>
+    
+    <div class="instruction-box">
+        <h4>📢 Petunjuk Sebelum Menjalankan Aplikasi:</h4>
+        <ol>
+            <li>Pastikan komputer Anda sudah terinstal <b>Java Runtime Environment (JRE) 17</b> atau yang terbaru.</li>
+            <li>Nyalakan tool database lokal Anda (<b>Laragon</b> atau XAMPP) dan pastikan service <b>MySQL Server</b> dalam keadaan <b>Start / Active</b>.</li>
+            <li>Import file database <code>Database_apk.sql</code> yang tersedia di dalam folder proyek jika diperlukan.</li>
+            <li>Klik dua kali (double-click) pada file <code>.jar</code> yang telah diunduh untuk membuka aplikasi.</li>
+        </ol>
+    </div>
+    
+    <p class="note">Project ini dibuat untuk memenuhi Tugas Besar Analisis Strategi Algoritma.</p>
+</div>
 
-<script>
-    cheerpjInit();
-    cheerpjCreateDisplay(1024, 768, document.getElementById("container"));
-
-    // Membuka file .jar langsung dari server mentah GitHub Anda
-    cheerpjRunJar("https://raw.githubusercontent.com/ihsansayonara00/PemberianPakanIkan/main/APKPemberianPakanIkan-1.0-SNAPSHOT.jar");
-</script>
 </body>
 </html>
